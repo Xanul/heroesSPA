@@ -11,7 +11,7 @@ export const HeroCard = ({
 
   const heroImageUrl = `/assets/${id}.jpg`;
 
-  const charactersByHero = (<p>{characters}</p>);
+  // const charactersByHero = (<p>{characters}</p>);
 
   const CharactersByHero = ({alter_ego, characters}) => {
     if (alter_ego === characters) return (<></>)
