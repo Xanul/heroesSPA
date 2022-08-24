@@ -5,7 +5,7 @@ import { useContext } from "react";
 
 export const PrivateRoute = ({children}) => {
 
-  const { authState } = useContext(AuthContext);
+  const { logged } = useContext(AuthContext);
   const { pathname, search } = useLocation();
   
   const lastPath = pathname + search;
@@ -13,7 +13,7 @@ export const PrivateRoute = ({children}) => {
   localStorage.setItem('lastPath', lastPath);
 
 
-  return (authState.logged)
+  return (logged)
     ? children
     : <Navigate to='/login'/>
   
