@@ -45,7 +45,7 @@ export const Navbar = () => {
               `nav-item nav-link ${isActive ? "active" : ""}`
             }
             to="/search">
-            Search
+            Buscar
           </NavLink>
         </div>
       </div>
